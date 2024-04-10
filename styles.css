@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Grandstander";
+  background-color: #780012;
+}
+#gift {
+  width: auto;
+  height: auto;
+  /* width: 130px; */
+}
+.image-container {
+  width: fit-content;
+  height: auto;
+  position: relative;
+  margin: 1.5rem;
+  /* Ensure the container fits its contents */
+}
+.celebrant-picture {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  /* max-width: 60ch; */
+  /* transform: translate(-50%, -50%); */
+  color: white; /* Text color */
+  font-size: clamp(2.5rem, 15vw, 18rem);
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #9e0920;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-color: rgba(141, 140, 145, 0); /* Background color with opacity */
+  padding: 10px 20px; /* Padding around text */
+}
+.note {
+  font-size: clamp(1.8rem, 4vw, 5rem);
+  text-align: center;
+  margin: 4rem;
+}
+.animated-text1 {
+  animation: slideIn 3s ease forwards;
+  margin: 5rem 10px;
+  color: white;
+  font-size: clamp(1.5rem, 6.5vw, 10rem);
+  text-align: center;
+  line-height: 1.3;
+  /* text-transform: capitalize; */
+  /* font-style: italic; */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.gift-box {
+  display: flex;
+  border: 4px solid white;
+  margin: 13rem auto 3rem;
+  font-size: clamp(1rem, 3vw, 4rem);
+  max-width: 50rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 0 whitesmoke;
+  transition: all 200ms ease-in-out;
+  text-transform: uppercase;
+  color: rgb(5, 4, 4);
+}
+.gift-box-link {
+  text-decoration: none;
+}
+.gift-box span {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+.gift-box:hover {
+  /* box-shadow: 0px 3px 0 white; */
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0 whitesmoke;
+}
+
+@media (max-width: 500px) {
+  .celebrant-picture {
+    border-radius: 0 0 25px 25px;
+  }
+  .image-container {
+    margin: 8px;
+  }
+  .note {
+    margin: 1rem;
+  }
+  .gift-box {
+    margin: 3rem;
+    padding: 10px;
+    max-width: 20rem;
+  }
+  .animated-text1 {
+    margin: 2rem;
+  }
+}
+.home {
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  /* margin-top: 4; */
+}
+.gift-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 70rem;
+  margin: 4rem auto;
+  padding: 10px;
+  color: white;
+}
+.gift-wrap h4 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+}
+.gift-card {
+  font-size: clamp(2rem, 5vw, 6rem);
+  text-align: center;
+}
